@@ -8,3 +8,8 @@
     background-attachment: fixed;
     overflow-x: hidden;
   }
+
+  .full-width{
+      background-image: url("./images/full-width.png");
+      height: 300px;
+  }
