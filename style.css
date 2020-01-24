@@ -49,3 +49,19 @@
     font-size: 16px;
     color: #ffffff;
   }
+
+
+  .btn-primary{
+      background-color: #F2BA07 !important;
+      width: 200px;
+      height: 50px;
+      font-family: 'Open Sans', sans-serif;
+      color: #232528 !important;
+      text-transform: uppercase;
+      border: none !important;
+      border-radius: 0 !important;
+      margin: 0 auto;
+      padding: 0;
+      display: table-cell;
+      vertical-align: middle;
+  }
