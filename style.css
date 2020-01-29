@@ -9,6 +9,10 @@
     overflow-x: hidden;
   }
 
+  #plantriphero {
+      background-image: url("./images/plantriphero.png");
+  }
+
   .full-width{
       background-image: url("./images/full-width.png");
       height: 300px;
