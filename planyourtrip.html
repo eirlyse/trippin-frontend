@@ -1,116 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+        integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
     <title>Home</title>
 </head>
+
 <body>
 
     <!-- NAV BAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="./images/TRIPPIN2@2x.png" height="60" alt="" id="logo">
-          </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="nav">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Plan Your Trip</a>
+                    <a class="nav-link active" href="#">Plan Your Trip</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Account</a>
+                    <a class="nav-link" href="#">Account</a>
                 </li>
-              </ul>
+            </ul>
         </div>
-      </nav>
+    </nav>
 
-      <!--END NAV BAR-->
+    <!--END NAV BAR-->
 
-        <!-- HERO IMAGE -->
+    <!-- HERO IMAGE -->
 
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-              <h1 class="display-4">Plan Your Trip</h1>
-              <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Plan Your Trip</h1>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+    </div>
+
+    <!-- END HERO IMAGE -->
+
+
+    <!-- SEARCH FORM -->
+
+    <form class="col-sm-12">
+        <h3>Search Here</h3>
+        <div class="form-row">
+            <div class="col">
+                <input type="text" class="form-control search-loc location" placeholder="Starting point..."
+                    id="startPoint">
             </div>
+            <div class="col">
+                <input type="text" class="form-control search-loc location" placeholder="End point..." id="endPoint">
+            </div>
+            <div class="col">
+
+                <button type="button" class="btn btn-warning hvr-sweep-to-right" id="searchButton">Search<i
+                        class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </form>
+
+    <!-- END SEARCH FORM -->
+
+
+    <!-- MAP -->
+
+    <div id="map" class="map"></div>
+
+    <!-- END MAP -->
+
+
+    <!-- SEARCH RESULTS-->
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <h3>Directions:</h3>
+
+            <div class="directionResults">
+                <ul>
+                    <li>Direction one</li>
+                    <li>Direction two</li>
+                    <li>Direction three</li>
+                    <li>Direction four</li>
+                </ul>
+            </div>
+
+
+            </div>
+            
           </div>
-    
-          <!-- END HERO IMAGE -->
 
 
-          <!-- SEARCH FORM -->
+          <div class="row">
+            <div class="col-sm">
 
-          <form class="col-sm-12">
-            <h3>Search Here</h3>
-            <div class="form-row">
-                <div class="col">
-                    <input type="text" class="form-control search-loc location" placeholder="Starting point..."
-                        id="startPoint">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control search-loc location" placeholder="End point..."
-                        id="endPoint">
-                </div>
-                <div class="col">
-                    
-                    <button type="button" class="btn btn-warning hvr-sweep-to-right" id="searchButton">Search<i class="fas fa-search"></i></button>
-                </div>
+                <h3>Places to Stay:</h3>
+
+            <div class="stayResults">
+                <ul>
+                    <li>Place to stay one</li>
+                    <li>Place to stay two</li>
+                    <li>Place to stay three</li>
+                    <li>Place to stay four</li>
+                </ul>
             </div>
-        </form>
 
-          <!-- END SEARCH FORM -->
+            <h3>Places to Eat:</h3>
 
-
-          <!-- MAP -->
-          <!-- END MAP -->
-
-
-          <!-- SEARCH RESULTS-->
-          <!-- END SEARCH RESULTS -->
-
-
-          <!-- CREATE ACCOUNT -->
-          <!-- END CREATE ACCOUNT -->
+            <div class="eatResults">
+                <ul>
+                    <li>Place to eat one</li>
+                    <li>Place to eat two</li>
+                    <li>Place to eat three</li>
+                    <li>Place to eat four</li>
+                </ul>
+            </div>
 
 
+            </div>
 
 
-          <!-- FOOTER -->
-          <div class="footer text-center">
-            <footer class="navbar navbar-expand-lg navbar-dark footer" >
-                <a class="navbar-brand" href="#">
-                  <img src="./images/TRIPPIN2@2x.png" height="60" alt="" id="footer-logo">
-                </a>
+            <div class="col-sm">
+
+                <h3>Things to see along the way:</h3>
+
+            <div class="landmarkResults">
+                <ul>
+                    <li>Landmark one</li>
+                    <li>Landmark two</li>
+                    <li>Landmark three</li>
+                    <li>Landmark four</li>
+                </ul>
+            </div>
+
+
+            </div>
             
-            
-                <ul class="nav mx-auto">
-                    <li class="nav-item">
-                      <a class="nav-link footer-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link footer-link" href="#">Plan Your Trip</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link footer-link" href="#">Account</a>
-                        </li>
-            
-                    
-                    
-                  </ul>
-                  
-                </div>
-              </footer>
-        
-        
-        <!-- END FOOTER -->
+          </div>
 
 
-    
+
+    </div>
+
+
+
+
+    </div>
+
+    <!-- END SEARCH RESULTS -->
+
+
+    <!-- CREATE ACCOUNT -->
+    <!-- END CREATE ACCOUNT -->
+
+
+
+
+    <!-- FOOTER -->
+    <div class="footer text-center">
+        <footer class="navbar navbar-expand-lg navbar-dark footer">
+            <a class="navbar-brand" href="#">
+                <img src="./images/TRIPPIN2@2x.png" height="60" alt="" id="footer-logo">
+            </a>
+
+
+            <ul class="nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link footer-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link footer-link" href="#">Plan Your Trip</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link footer-link" href="#">Account</a>
+                </li>
+
+
+
+            </ul>
+
+    </div>
+    </footer>
+
+
+    <!-- END FOOTER -->
+
+
+
 </body>
+
 </html>
