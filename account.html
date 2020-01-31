@@ -1,34 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald:600&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+        integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
     <title>Home</title>
 </head>
+
 <body>
 
     <!-- NAV BAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="./images/TRIPPIN2@2x.png" height="60" alt="" id="logo">
-          </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="nav">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Plan Your Trip</a>
+                    <a class="nav-link active" href="#">Plan Your Trip</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Account</a>
+                    <a class="nav-link" href="#">Account</a>
                 </li>
-              </ul>
+            </ul>
         </div>
-      </nav>
-    
+    </nav>
+
+    <br><br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Your Account</h1>
+                <h5>Name:</h5>
+                <p>John Doe</p>
+                <h5>Email:</h5>
+                <p>johndoe@gmail.com</p>
+                <h5>Password:</h5>
+                <p>••••••••</p>
+            </div>
+
+            <div class="col-md-6">
+                <img src="images/profilepicture.png" id="profilepic">
+
+            </div>
+        </div>
+        <br>
+        <h2>Your Saved Trips</h2>
+        <br>
+        <h5 class="savedTripTitle">Saved Trip One</h5>
+        <div class="col-md-12 savedTrip">
+            <img src="images/savedtripone.png">
+        </div>
+        <br>
+        <h5 class="savedTripTitle">Saved Trip Two</h5>
+        <div class="col-md-12 savedTrip">
+            <img src="images/savedtriptwo.png">
+        </div>
+        <br>
+        <h5 class="savedTripTitle">Saved Trip Three</h5>
+        <div class="col-md-12 savedTrip">
+            <img src="images/savedtripthree.png">
+        </div>
+
+
+        <br><br><br>
+
+    </div>
+
 </body>
+
 </html>
